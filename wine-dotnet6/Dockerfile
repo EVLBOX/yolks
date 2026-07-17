@@ -20,11 +20,9 @@ FROM ghcr.io/parkervcp/yolks:wine_latest
 COPY --from=builder /home/.wine-dotnet6 /home/.wine-dotnet6
 
 # EVLBOX branding
-RUN echo '  _____  _    __ ____   _     ___   ___  __  __'  > /home/evlbox-banner.txt && \
-    echo ' | ____|| |  / /|  _ \ | |   / _ \ / _ \|  \/  |' >> /home/evlbox-banner.txt && \
-    echo ' |  _|  | | / / | |_) || |  | | | | | | | |\/| |' >> /home/evlbox-banner.txt && \
-    echo ' | |___ | |/ /  |  _ < | |__| |_| | |_| | |  | |' >> /home/evlbox-banner.txt && \
-    echo ' |_____||___/   |_| \_\|_____\___/ \___/|_|  |_|' >> /home/evlbox-banner.txt && \
-    echo "" >> /home/evlbox-banner.txt && \
-    echo "  🥚 EVLBOX Wine + .NET 6 Runtime" >> /home/evlbox-banner.txt && \
-    echo "  Wine 11.0 | .NET 6.0 Desktop | Pterodactyl Compatible" >> /home/evlbox-banner.txt
+RUN printf '%s\n' \
+    " " \
+    "   EVLBOX - Wine + .NET 6 Runtime" \
+    "   Wine 11.0 | .NET 6.0 Desktop | Pterodactyl Compatible" \
+    " " \
+    > /home/evlbox-banner.txt
