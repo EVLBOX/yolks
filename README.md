@@ -11,6 +11,7 @@ In Pterodactyl, an **egg** imports a **yolk** — the Docker image that provides
 | Image | Base | Extras | Pull |
 |-------|------|--------|------|
 | `evlbox/wine-dotnet6` | `wine_latest` (Wine 11.0) | .NET 6 Desktop Runtime | `docker pull ghcr.io/evlbox/wine-dotnet6:latest` |
+| `evlbox/steamcmd` | `debian:trixie-slim` | GE-Proton 11-9 + steamcmd, Enshrouded 1.0 fix | `docker pull ghcr.io/evlbox/steamcmd:proton_ge11` |
 
 ## Usage
 
